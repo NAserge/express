@@ -1,8 +1,0 @@
-
-# services:
-#   - type: web
-#     name: expressway0.1
-#     runtime: python
-#     buildCommand: "./build.sh"
-#     startCommand: "gunicorn tracking.wsgi:application"
-    
