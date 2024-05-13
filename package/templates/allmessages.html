@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{%load static %}
+
+{% block css %}
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <table class="table table-bordered border-primary">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Client name</th>
+          <th scope="col">message</th>
+          <th scope="col">action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for contactmessage in contactmessage %}
+        <tr>
+          <th >{{forloop.counter}}</th>
+          <td>{{contactmessage.name}}</td>
+          <td>{{contactmessage.message|truncatechars:20}} ...</td>
+          <td>
+            <a href="{% url 'panel_admin:details' order.id %}">view</a>
+            <a href="{% url 'panel_admin:delete order' order.id %}">delete</i></a>     
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+{% endblock %}

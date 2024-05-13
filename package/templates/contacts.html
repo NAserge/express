@@ -1,0 +1,44 @@
+{% extends 'homepage.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css\contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <div class="container">
+        <div class="row d-flex ">
+            <div class="logo-text">
+              {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+               {% endif %}
+                <h4>Send us a message</h4>
+            </div>
+            <form action="" method="POST" class="align-items-center">
+                {% csrf_token %}
+                <form>
+                    <div class="mb-2 col-9">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Full Name">
+                      </div>
+                    <div class="mb-2 col-9">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-2 col-9">
+                      <input type="text" class="form-control" id="tectsubject" placeholder="Subject">
+                    </div>
+                    <div class="mb-2 message col-9">
+                        <input type="text" class="form-control" id="message" aria-describedby="" placeholder="feedback or message">
+                    </div>
+                    <button type="submit" class="btn btn">Send message</button>
+                  </form>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<div class="card shadow">
+    <div class="card-body">
+        <h5 class="p-2" style="border-bottom: 2px solid orange;">{{order_status}} Order</h5>
+        <div class="container-fluid">
+            <table class="table table-bordered table-sm" id="example">
+                <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>OrderId</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for i in order %}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{i.Trackingnumber}}</td>
+                    <td>{{i.custumer_name}}</td>
+                    <td>{{i.email}}</td>
+                    <!-- <td>{{i.get_status_display}}</td> -->
+                    <td>
+                        <a href="#" class="btn btn-info">
+                            <i class="fas fa-info"></i>
+                        </a>
+                        <a href="/delete-order/{{i.id}}/?action={{request.GET.action}}" class="btn btn-danger"
+                           onclick="return confirm('Are You Sure?')">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+ 

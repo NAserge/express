@@ -1,0 +1,101 @@
+{% extends 'homepage.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css\services.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="services">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="logo-text text-center">
+        <h3>Our services</h3>
+      </div>
+      <div class="row service d-flex">
+        <div class="col">
+          <img src="{% static 'image\package pickup 2.png' %}" alt="" srcset="" class="img-fluid">
+        </div>
+        <div class="col">
+          <h5>Package Pickup</h5>
+          <p>As a courier, we offer the convenience of picking up packages directly from your location. Whether it's your home, office, or any other specified address, we ensure that your packages are collected efficiently and securely.
+        </p>
+        </div>
+      </div>
+      <div class="row service d-flex">
+        
+        <div class="col">
+          <h5>Next-Day or Express Delivery</h5>
+          <p>For slightly less time-sensitive shipments, courier companies provide next-day or express delivery options. These services ensure that your packages are delivered promptly, typically within 24 to 48 hours.
+
+          </p>
+        </div>
+        <div class="col">
+          <img src="{% static 'image\box on man back.jpg' %}" alt="" srcset="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row service">
+        <div class="col">
+          <img src="{% static 'image\international shipping 2.png' %}" alt="" srcset="" class="img-fluid">
+        </div>
+        <div class="col">
+          <h5>International Shipping</h5>
+          <p>As a Courier have extensive networks and partnerships that allow them to provide reliable and efficient international shipping services. They handle customs clearance, documentation, and transportation to ensure your packages reach destinations across the globe.       
+          </p>
+        </div>
+      </div>
+      <div class="row service">
+        <div class="col">
+          <h5>Special Handling and Services</h5>
+          <p>Depending on your specific requirements, we offer specialized services to accommodate different types of packages. Whether it's temperature-controlled transportation for perishable items, secure handling for high-value goods, or compliant transportation for hazardous materials, we have the expertise to handle such shipments safely and efficiently.
+          </p>
+        </div>
+        <div class="col">
+          <img src="{% static 'image\special handling services.png' %}" alt="" srcset="" class="img-fluid">
+        </div>
+       
+      </div>
+      <div class="row service">
+        <div class="col">
+          <img src="{% static 'image\custumer support 2.png' %}" alt="" srcset="" class="img-fluid">
+        </div>
+        <div class="col">
+          <h5>Customer Support</h5>
+          <p>We provide excellent customer support to address any concerns or inquiries you may have regarding your shipments. Our customer service representatives are available to assist you, providing updates, answering questions, and resolving any issues that may arise during the shipping process.
+          </p>
+        </div>        
+      </div>
+      <div class="row service">
+        <div class="col">
+          <h5> Flexibility and Customization</h5>
+          <p>We understand that each client has unique needs. Therefore, we offer flexibility and customization options to tailor our services to your specific requirements. From delivery preferences to special instructions, we strive to accommodate your requests and provide a personalized experience.
+          </p>
+        </div>   
+        <div class="col">
+          <img src="{% static 'image\custumization.png' %}" alt="" srcset="" class="img-fluid">
+        </div>
+          
+      </div>
+      <div class="row service">
+        <div class="col">
+          <img src="{% static 'image\logistics.png' %}" alt="" srcset="" class="img-fluid">
+        </div>
+        <div class="col">
+          <h5>Returns and Reverse Logistics</h5>
+         <p>Courier companies facilitate the return of packages, managing the entire reverse logistics process. They handle package collection from the recipient, transportation back to the sender, and any necessary paperwork or documentation.</p>
+        </div>
+      </div>
+      <div class="row service">
+        <div class="col">
+          <h5>Warehousing and Fulfillment</h5>
+          <p>We provide warehousing and fulfillment services for businesses. This includes inventory management, order processing, and the efficient distribution of products to customers.</p>
+        </div>
+        <div class="col">
+          <img src="{% static 'image\warehouse.png' %}" alt="" srcset="" class="img-fluid">
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

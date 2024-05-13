@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(0deg, #f43b47 0%, #453a94 100%);
+    background-repeat: no-repeat;
+    color: white;   
+}
+.services .row{
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.services .container .row .logo-text h3{
+    color:#f43b47 ;
+}
+.row .service{
+    margin-top: 4vh;
+}
+.service .col img{
+    border-radius: 1rem;
+}
+
+.service .row {
+    flex-direction: row;
+}
+
+@media(max-width: 600px){
+    .row{
+        flex-direction: column;
+    }
+    .row .col-6 h5{
+        font-size: 17px;
+    }
+    .row .col-6{
+        width: 100%;
+        font-size: 15px;
+    }
+}

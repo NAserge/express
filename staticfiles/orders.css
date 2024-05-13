@@ -1,0 +1,36 @@
+#nav{
+    margin-top: 5rem;
+}
+.container-fluid .collapse form input{
+    border: none;
+    outline: none;
+    background-color: none;
+}   
+
+.container-main a{
+    text-decoration: underline;
+    
+}
+.container-main .announcement{
+    padding: 1rem;
+}
+.announcement .picture{
+    padding-top: 2rem;
+    background-color: rgb(202, 129, 238);
+}
+.picture .image{
+    padding-top: 1.5rem;
+    
+}
+
+
+
+.content .text{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.text .timestamp{
+    
+    margin-left: 38rem;
+    margin-top: 0.5rem;
+} 
