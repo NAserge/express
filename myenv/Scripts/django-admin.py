@@ -1,4 +1,4 @@
-#!C:\Users\GEMINYYE\Desktop\expressway\myenv\scripts\python.exe
+#!C:\Users\GEMINYYE\Desktop\express\myenv\Scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

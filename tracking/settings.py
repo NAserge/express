@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
-SECRET_KEY = 'laldjforegfnoarghvnoerhoo'
+SECRET_KEY = '38b49fa69e42d7a296447ceb36d6597b'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -99,10 +99,7 @@ DATABASES = {
 DATABASES['default'] = dj_database_url.parse("postgres://express_3xov_user:dHanbsTdyaAWS821RUbCJhxWfNoHBoxh@dpg-cp122tvsc6pc73846430-a.oregon-postgres.render.com/express_3xov")
 
 # DATABASE_URL = os.environ.get("DATABASE_URL")
-# DATABASES['default'] = dj_database_url.config(default = DATABASE_URL)
-
-
-# DATABASES['default'] = dj_database_url.parse('postgres://expressway_user:25cLI734ZhR8z3OVtbu7WiUsBbeLykun@dpg-cl233s0p2gis73fu8op0-a.oregon-postgres.render.com/expressway')
+# DATABASES['default'] = dj_database_url.parse(DATABASE_URL)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
